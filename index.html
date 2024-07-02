@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Control de Inventario</h1>
+    
+    <div id="acciones">
+        <div>
+            <input type="text" id="buscar-nombre" placeholder="Buscar por nombre">
+            <input type="text" id="buscar-categoria" placeholder="Categoría">
+            <input type="number" id="buscar-cantidad" placeholder="Cantidad mínima" min="0">
+            <button id="buscar-producto">Buscar</button>
+        </div>
+        <button id="agregar">Agregar Producto</button>
+        <button id="mostrarInventario">Mostrar Inventario</button>
+    </div>
+    
+    <div id="formulario"></div>
+    
+    <div id="resultado"></div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="cerrarModal" class="close">&times;</span>
+            <p id="modal-mensaje"></p>
+            <div id="modal-botones"></div>
+        </div>
+    </div>
+
+    <footer class="footer-index">
+        <div class="footer-information">
+            <div class="information-column">
+                <a href="https://www.coderhouse.com/" target="_blank">
+                    <img src="./img/1-logo-coderhouse.png" class="logo-coder" alt="Logo de Coderhouse" />
+                </a>
+            </div>
+            <div class="information-column">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Nuestra aplicación está diseñada para ayudar a empresas de todos los tamaños a gestionar eficientemente sus stocks.</p>
+            </div>
+            <div class="information-column">
+                <h2>SIGUENOS</h2>
+                <div class="footer-contact">
+                    <a href="https://www.facebook.com/geronimobazann/" target="_blank" class="bi bi-facebook"></a>
+                    <a href="https://www.instagram.com/geronimobazan/" target="_blank" class="bi bi-instagram"></a>
+                    <a href="https://wa.me/5491123503172" target="_blank" class="bi bi-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <small>© 2024 | <b>Sitio diseñado por</b> - Gerónimo Bazán. Estudiante de Coderhouse.</small>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
